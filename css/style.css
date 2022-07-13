@@ -199,8 +199,8 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   height: 500px;
   color: rgb(255, 247, 247);
   font-weight: bold;
-  background-image: url(../images/top.jpg);/* 背景画像 */
-  background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
+  background-image: url(../images/top_todaatume02.jpg);/* 背景画像 */
+  background-size: 100%;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
   background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
   
@@ -252,6 +252,9 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   color: #fff;
   background-color: rgb(164, 164, 164);
 }
+
+
+
 
 /* =================================================
 worksページ
@@ -372,6 +375,16 @@ reportページ
   bottom: 0;
   margin: auto;
 }
+
+/*///////////////*/
+
+	
+
+
+/*//////////*/
+
+
+
 
 /* =================================================
 profileページ
