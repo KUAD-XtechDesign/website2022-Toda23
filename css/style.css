@@ -400,6 +400,11 @@ profileページ
   margin-right: 30px;
 }
 
+.profile_container div{
+border-left: 4px solid #ccc;
+padding: 7px;
+}
+
 
 
 /*======================================================
