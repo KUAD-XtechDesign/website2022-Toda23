@@ -235,6 +235,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 }
 
 a.link_btn{
+ font-family: sans-serif;
   text-decoration: none;
   font-weight: bold;
   display: block;
@@ -404,6 +405,7 @@ profileページ
 border-left: 4px solid #ccc;
 padding: 7px;
 }
+
 
 
 
