@@ -265,6 +265,7 @@ worksページ
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  
 }
 
 .thumb_list li {
@@ -300,6 +301,11 @@ worksページ
   object-position: center center;
   
   transition: 0.4s all;
+}
+
+.div{ 
+  margin-left: 20px;
+
 }
 
 /* マウスオーバー時、中の画像が1.3倍になって10度傾く */
