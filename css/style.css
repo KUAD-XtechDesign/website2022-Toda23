@@ -273,6 +273,10 @@ worksページ
   padding: 10px;
 }
 
+.bun_list{
+  margin-left: 8%;
+}
+
 @media (max-width: 900px) {
   .thumb_list li {
     width: 50%;
@@ -411,6 +415,7 @@ profileページ
 border-left: 4px solid #ccc;
 padding: 7px;
 }
+
 
 
 
