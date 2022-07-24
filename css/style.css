@@ -428,3 +428,32 @@ padding: 7px;
 }
 
 
+
+/*======================================================
+マウスストーカー
+======================================================*/
+#mousepoint{
+  position: fixed;
+  transition: 0.3s;/* 追随してくるときのスピードに関係 */
+  transition-timing-function: ease-out; 
+  pointer-events: none;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+
+#circle{
+  position: absolute;
+  width: 25px;/* 通常時の円の幅 */
+  height: 25px;/* 通常時の円の高さ */
+  border-radius: 50%;
+  transition: 0.2s all;
+  transform: translate(-50%,-50%);
+  background: rgba(255, 255, 255, 0.5);/* 通常時の円の色と透明度 */
+}
+
+#mousepoint.ahover #circle{
+  width: 50px;/* リンクに重なったときの円の幅 */
+  height: 50px;/* リンクに重なったときの円の高さ */
+  background: rgba(255, 0, 0, 0.5);/* リンクに重なったときの円の色と透明度 */
+}
