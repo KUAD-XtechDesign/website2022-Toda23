@@ -130,7 +130,7 @@ header .inner {
   border-radius: 20px;
   right: 10px;
   top: 7px;
-  background-color: #ccc;
+  background-color: rgb(204, 204, 204);
   z-index: 30;
   cursor: pointer;
   display: none;
@@ -449,11 +449,11 @@ padding: 7px;
   border-radius: 50%;
   transition: 0.2s all;
   transform: translate(-50%,-50%);
-  background: rgba(255, 255, 255, 0.5);/* 通常時の円の色と透明度 */
+  background: rgba(253, 255, 205, 0.5);/* 通常時の円の色と透明度 */
 }
 
 #mousepoint.ahover #circle{
   width: 50px;/* リンクに重なったときの円の幅 */
   height: 50px;/* リンクに重なったときの円の高さ */
-  background: rgba(255, 0, 0, 0.5);/* リンクに重なったときの円の色と透明度 */
+  background: rgba(244, 255, 26, 0.5);/* リンクに重なったときの円の色と透明度 */
 }
