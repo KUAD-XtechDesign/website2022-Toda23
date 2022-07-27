@@ -199,7 +199,7 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
   height: 500px;
   color: rgb(255, 247, 247);
   font-weight: bold;
-  background-image: url(../images/top_todaatume02.jpg);/* 背景画像 */
+  background-image: url(../images/100_top_todaatume02.jpg);/* 背景画像 */
   background-size: 100%;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
   background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
@@ -323,7 +323,7 @@ reportページ
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/top_todaatume02.jpg);
+  background-image: url(../images/100_top_todaatume02.jpg);
   background-size: cover;
   background-position: center center;
   display: flex;
