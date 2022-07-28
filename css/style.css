@@ -12,7 +12,7 @@ html,
 body {
   height: 100%;
   font-feature-settings: "palt";
-  background-color: #fff;
+  background-color: rgb(0, 0, 0);
   position: relative;
 }
 
@@ -20,7 +20,7 @@ body {
   font-size: 16px;
   line-height: 1.6;
   font-family: "游ゴシック体", YuGothic, "游ゴシック", "Yu Gothic", "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
-  color: #333333;
+  color: #dcdcdc;
   letter-spacing: 0.05em;
 }
 
@@ -130,7 +130,7 @@ header .inner {
   border-radius: 20px;
   right: 10px;
   top: 7px;
-  background-color: #ccc;
+  background-color: rgb(204, 204, 204);
   z-index: 30;
   cursor: pointer;
   display: none;
@@ -197,10 +197,10 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 ================================================= */
 .top_eye_catch {
   height: 500px;
-  color: #fff;
+  color: rgb(255, 247, 247);
   font-weight: bold;
-  background-image: url(../images/top.jpg);/* 背景画像 */
-  background-size: cover;/* 背景画像のサイズ 要素いっぱいに表示 */
+  background-image: url(../images/100_top_todaatume02.png);/* 背景画像 */
+  background-size: 100%;/* 背景画像のサイズ 要素いっぱいに表示 */
   background-position: center center;/* 背景画像の位置 */
   background-attachment: fixed;/* スクロールしたときの背景画像の位置 固定 */
   
@@ -235,11 +235,12 @@ body.contents_page {/* classにcontents_pageが指定されているbodyタグ *
 }
 
 a.link_btn{
+ font-family: sans-serif;
   text-decoration: none;
   font-weight: bold;
   display: block;
   margin: 30px 0;
-  border: 2px solid #666;
+  border: 2px solid rgb(255, 255, 255);
   padding: 5px;
   text-align: center;
   border-radius: 50px;
@@ -250,8 +251,11 @@ a.link_btn:hover{/* classがlink_btnのaタグのマウスオーバー時 */
   opacity: 1;/* 半透明にならないように上書き */
   border-radius: 0;
   color: #fff;
-  background-color: #333;
+  background-color: rgb(164, 164, 164);
 }
+
+
+
 
 /* =================================================
 worksページ
@@ -261,11 +265,16 @@ worksページ
   display: flex;
   flex-wrap: wrap;
   margin: 0 -10px;
+  
 }
 
 .thumb_list li {
   width: 25%;
   padding: 10px;
+}
+
+.bun_list{
+  margin-left: 8%;
 }
 
 @media (max-width: 900px) {
@@ -298,6 +307,11 @@ worksページ
   transition: 0.4s all;
 }
 
+.div{ 
+  margin-left: 20px;
+
+}
+
 /* マウスオーバー時、中の画像が1.3倍になって10度傾く */
 .thumb_list li a:hover img{
   transform: scale(1.3) rotate(10deg);
@@ -309,7 +323,7 @@ reportページ
 
 .report_eye_catch {
   height: 300px;
-  background-image: url(../images/report.jpg);
+  background-image: url(../images/100_top_todaatume02.png);
   background-size: cover;
   background-position: center center;
   display: flex;
@@ -373,11 +387,21 @@ reportページ
   margin: auto;
 }
 
+/*///////////////*/
+
+	
+
+
+/*//////////*/
+
+
+
+
 /* =================================================
 profileページ
 ================================================= */
 .profile_container{
-  writing-mode: vertical-rl;
+  writing-mode: sideways-lr;
   width: 100%;
   height: 300px;
   overflow: auto;
@@ -387,6 +411,13 @@ profileページ
   margin-right: 30px;
 }
 
+.profile_container div{
+border-left: 4px solid #ccc;
+padding: 7px;
+}
+
+
+
 
 
 /*======================================================
@@ -394,4 +425,35 @@ profileページ
 ======================================================*/
 .mb_m {
   margin-bottom: 20px;
+}
+
+
+
+/*======================================================
+マウスストーカー
+======================================================*/
+#mousepoint{
+  position: fixed;
+  transition: 0.3s;/* 追随してくるときのスピードに関係 */
+  transition-timing-function: ease-out; 
+  pointer-events: none;
+  z-index: 200;
+  top: 0;
+  left: 0;
+}
+
+#circle{
+  position: absolute;
+  width: 25px;/* 通常時の円の幅 */
+  height: 25px;/* 通常時の円の高さ */
+  border-radius: 50%;
+  transition: 0.2s all;
+  transform: translate(-50%,-50%);
+  background: rgba(253, 255, 205, 0.5);/* 通常時の円の色と透明度 */
+}
+
+#mousepoint.ahover #circle{
+  width: 50px;/* リンクに重なったときの円の幅 */
+  height: 50px;/* リンクに重なったときの円の高さ */
+  background: rgba(244, 255, 26, 0.5);/* リンクに重なったときの円の色と透明度 */
 }
